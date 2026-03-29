@@ -3,3 +3,10 @@
 source "https://rubygems.org"
 
 # gem "rails"
+
+gem "rake"
+
+group :test do
+  gem "minitest"
+  gem "minitest-spec-context"
+end
