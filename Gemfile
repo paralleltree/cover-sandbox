@@ -9,4 +9,5 @@ gem "rake"
 group :test do
   gem "minitest"
   gem "minitest-spec-context"
+  gem "simplecov", require: false
 end
