@@ -9,6 +9,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read # to checkout
+      pull-requests: write # to comment on PR with octocov
+      actions: read # to parse test execution time for octocov
 
     steps:
       - uses: actions/checkout@v6
